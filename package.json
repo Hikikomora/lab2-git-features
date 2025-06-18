@@ -1,0 +1,25 @@
+{
+  "name": "software-testing-automation",
+  "version": "1.0.0",
+  "description": "Проєкт для демонстрації автоматизації тестування програмного забезпечення за допомогою Jest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "testing",
+    "automation",
+    "jest",
+    "software-testing"
+  ],
+  "author": "Бережний Владислав Олександрович",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0"
+  }
+}
