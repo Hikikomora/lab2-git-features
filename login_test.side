@@ -1,0 +1,62 @@
+{
+  "id": "12345678-90ab-cdef-1234-567890abcdef",
+  "version": "2.0",
+  "name": "Login Test Project",
+  "url": "http://localhost:3000/login.html",
+  "tests": [
+    {
+      "id": "test-login-001",
+      "name": "Login with correct credentials",
+      "commands": [
+        {
+          "id": "open-login-page",
+          "comment": "",
+          "command": "open",
+          "target": "/login",
+          "value": ""
+        },
+        {
+          "id": "type-username",
+          "comment": "",
+          "command": "type",
+          "target": "id=username",
+          "value": "testuser"
+        },
+        {
+          "id": "type-password",
+          "comment": "",
+          "command": "type",
+          "target": "id=password",
+          "value": "testpass"
+        },
+        {
+          "id": "click-login-button",
+          "comment": "",
+          "command": "click",
+          "target": "id=login-button",
+          "value": ""
+        },
+        {
+          "id": "assert-dashboard",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=h1.dashboard-title",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "suite-001",
+      "name": "Login Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "test-login-001"
+      ]
+    }
+  ],
+  "plugins": []
+}
